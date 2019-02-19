@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>	Freeeze	</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header id="header">
+		<img src="images/logo.png">
+		<a href="#" class="hide-desktop">
+                    <img src="images/ham.svg" alt="toggle menu" class="menu" id="menu">
+        </a>
+		<nav>
+                <ul class="show-desktop hide-mobile" id="nav">
+                    <li id="exit" class="exit-btn hide-desktop">
+                        <img src="images/exit.svg" alt="exit menu">
+                    </li>
+				<li><a href="#" id="active">HOME</a></li>
+				<li><a href="#">ABOUT</a></li>
+				<li><a href="#">BLOG</a></li>
+				<li><a href="#">CONTACT</a></li>
+			</ul>
+		</nav>
+	</header>
+	<section id="section">
+		<div id="bg-image">
+			<img src="images/bg-home.jpg">
+			<a href="#"><div id="circle">
+				<img src="images/circle.png">
+				<p>FREEZE <br> DELIGHT</p>	
+			</div></a>
+		</div>
+		<div id="main-section">
+			<div id="main-content">
+				<h3>NEW PRODUCT</h3>
+				<h1>The Twist of Healthy Yogurt</h1>
+				<p>This website template has been designed by <br>
+					<a href="#">kamal pandey</a><br>
+					for you,for free. you can replace all this text with your own text.
+				</p>				
+			</div>
+			<div id="content-img">
+				<img src="images/yogurt.jpg">
+			</div>
+		</div>
+		<div id="categories">
+			<div class="categories-items"> 
+				<a href="#"><img src="images/products.png"></a>
+				<p>PRODUCTS</p>
+			</div>
+			<div class="categories-items"> 
+				<a href="#"><img src="images/ourstory.png"></a>
+				<p>OUR STORY</p>
+			</div>
+			<div class="categories-items"> 
+				<a href="#"><img src="images/flavours.png"></a>
+				<p>FLAVOURS</p>
+			</div>
+			<div class="categories-items"> 
+				<a href="#"><img src="images/location.png"></a>
+				<p>OUR LOCATION</p>
+			</div>
+		</div>
+	</section>
+	<footer id="footer">
+		<div id="footer-icons">
+			<div class="social-media-icons"> 
+				<a href="#"><img src="images/facebook.png"></a>
+			</div>
+			<div class="social-media-icons"> 
+				<a href="#"><img src="images/twitter.png"></a>
+			</div>
+			<div class="social-media-icons"> 
+				<a href="#"><img src="images/googleplus.png"></a>
+			</div>
+			<div class="social-media-icons"> 
+				<a href="#"><img src="images/pinterest.png"></a>
+			</div>
+		</div>
+		<div id="copyright">
+			<p>&copy; 2023 Freeeze. All Rights Reserved.</p>
+		</div>
+	</footer>
+
+	<script>
+    
+        var menu = document.getElementById('menu');
+        var nav = document.getElementById('nav');
+        var exit = document.getElementById('exit');
+
+        menu.addEventListener('click', function(e) {
+            nav.classList.toggle('hide-mobile');
+            e.preventDefault();
+        });
+
+        exit.addEventListener('click', function(e) {
+            nav.classList.add('hide-mobile');
+            e.preventDefault();
+        });
+
+    </script>
+</body>
+</html>

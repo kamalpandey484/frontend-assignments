@@ -7,6 +7,7 @@
 
 	nav{
 		float: right;
+		display: flex;
 	}
 
 	#header{
@@ -16,11 +17,11 @@
 
 	#header ul{	
 		list-style-type: none;
-		display: flex;
 	}
 
 	#header ul li{
 		padding-right: 60px	;
+		display: inline;
 	}
 
 	#header ul li a{
@@ -34,10 +35,6 @@
 
 	a#active:link, a#active:visited{
 		color:#ec82b5;
-	}
-
-	nav{
-		float: right;
 	}
 
 	#bg-image img{
@@ -144,6 +141,11 @@
         display: none;
     }
 
+	{
+		display: none;
+	}
+
+
 	@media only screen and (max-width: 850px) {
 	  body {
 	    width: 100%;
@@ -160,15 +162,30 @@
 	 }
 
 	 .hide-desktop {
-        display: inline-flex;
-        margin-left: 120px;
-        padding-bottom: 0;
-   	 }
-
-	 nav{
-	 	float: none;
-	 	display: none;
+		 display: inline-flex;
+		 margin-left: 120px;
+		 padding-bottom: 0;
 	 }
+	 nav ul {
+		 position: fixed;
+		 width: 60%;
+		 top: 0;
+		 right: 0;
+		 text-align: left;
+		 background: rgb(36,41,44);
+		 height: 100%;
+		 z-index: 7;
+		 padding-top: 3em;
+	 }
+
+		nav ul li a {
+			color: white;
+			text-decoration: none;
+			display: block;
+			width: 100%;
+			padding: 1em 2em;
+			background-color: rgb(49, 55, 59);
+		}
 
 	 #header ul li{
 	 	padding: 10px;

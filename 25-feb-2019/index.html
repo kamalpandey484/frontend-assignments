@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="wrapper">
+                <div class="logo-space">
+                   <a href="javascript:void(0)"><img src="assets/Logo.png" alt="Agnii Logo"></a>
+                    <span class="dropdown">
+                        <span onclick="myFunction()" class="dropbtn">Eng<i class="fa fa-angle-down"></i></span>
+                        <ul id="myDropdown" class="dropdown-content">
+                            <li><a href="javascript:void(0)">Eng</a></li>
+                            <li><a href="javascript:void(0)">Hindi</a></li>
+                        </ul>
+                    </span>
+                </div>
+                <nav class="navigation-menu">
+                   <ul class="main-menu">
+                       <li><a href="javascript:void(0)"><i class="fa fa-home"></i></a></li>
+                       <li ><a onclick="myFunction()" class="dropbtn" href="javascript:void(0)">About<i class="fa fa-angle-down"></i></a>
+                           <ul id ="myDropdown" class="dropdown-content">
+                               <li><a href="javascript:void(0)">About Us</a></li>
+                               <li><a href="javascript:void(0)">Services</a></li>
+                               <li><a href="javascript:void(0)">Team</a></li>
+                               <li><a href="javascript:void(0)">Join Our Team</a></li>
+                           </ul>
+                       </li>
+                       <li><a href="javascript:void(0)">Ecosystems</a></li>
+                       <li><a href="javascript:void(0)">Resources</a></li>
+                       <li><a href="javascript:void(0)">Contact Us</a></li>
+                       <li><a href="javascript:void(0)"><img src="assets/user.png" alt="user logo"></a></li>
+                   </ul>
+                </nav>
+            </div>
+        </header>
+
+    </div>
+    <script>
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+         }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+<svg width="50" height="5" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+ <g>
+  <title>background</title>
+  <rect fill="#fff" id="canvas_background" height="7" width="52" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <line stroke="#ff6100" stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_1" y2="1.921875" x2="56.000002" y1="1.921875" x1="-4.000002" fill-opacity="null" stroke-opacity="null" stroke-width="5" fill="none"/>
+ </g>
+</svg>

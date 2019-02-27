@@ -9,7 +9,9 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,900" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+<!--
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.7.1/flexslider.css">
+-->
     <script src="jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.7.1/jquery.flexslider-min.js"></script>
 </head>
@@ -30,12 +32,18 @@
                 <nav class="navigation-menu">
                    <ul class="main-menu">
                        <li class="main-menu-item"><a href="javascript:void(0)"><i class="fa fa-home"></i></a></li>
-                       <li class="main-menu-item"><a onclick="myFunction1()" class="submenu" href="javascript:void(0)">About</a>
+                       <li class="main-menu-item"><a onclick="myFunction1()" class="submenu" href="javascript:void(0)">About<i class="fa fa-angle-down"></i></a>
                            <ul id="myDropdown1" class="dropdown-content-hover clearFix">
                                <li class="sub-menu-item"><a href="javascript:void(0)">About Us</a></li>
                                <li class="sub-menu-item"><a href="javascript:void(0)">Services</a></li>
                                <li class="sub-menu-item"><a href="javascript:void(0)">Team</a></li>
-                               <li class="sub-menu-item"><a href="javascript:void(0)">Join Our Team</a></li>
+                               <li class="sub-menu-item"><a href="javascript:void(0)">Join Our Team</a>
+                                    <ul class="dropdown-content-hover sub-sub-menu">
+                                        <li class="sub-menu-item"><a href="javascript:void(0)">Sub-menu</a></li>
+                                        <li class="sub-menu-item"><a href="javascript:void(0)">Sub-menu</a></li>
+                                        <li class="sub-menu-item"><a href="javascript:void(0)">Sub-menu</a></li>
+                                    </ul>
+                               </li>
                            </ul>
                        </li>
                        <li class="main-menu-item"><a href="javascript:void(0)">Ecosystems</a></li>
@@ -47,6 +55,22 @@
             </div>
         </header>
         <section class="section-slider">
+            <div class="flexslider">
+                <ul class="slides">
+                    <li>
+                        <img src="assets/banner-bg.jpg" />
+                    </li>
+                    <li>
+                        <img src="assets/banner-bg.jpg" />
+                    </li>
+                    <li>
+                        <img src="assets/banner-bg.jpg" />
+                    </li>
+                    <li>
+                        <img src="assets/banner-bg.jpg" />
+                    </li>
+                </ul>
+            </div>
             <div class="wrapper">
                 <p class="slider-para">Home > About > Partners</p>
                 <div class="slider-content">
@@ -117,19 +141,27 @@
             document.getElementById("myDropdown").classList.toggle("show");
          }
 
-         function myFunction1() {
+         /*function myFunction1() {
              document.getElementById("myDropdown1").classList.toggle("show");
-         }
+         }*/
 
     </script>
 
-   <!-- <script>
+    <script>
+        $(function() {
+            $('.flexslider').flexslider({
+                animation: "slide"
+            });
+        });
+    </script>
+
+    <script>
         $(document).ready(function(){
-            $('.submenu').hover(function(){
-                $('.dropdown-content-hover').fadeToggle();
+            $('.main-menu li').hover(function(){
+                $(this).children('.dropdown-content-hover').stop().fadeToggle();
             })
         })
-    </script>-->
+    </script>
 
 </body>
 </html>

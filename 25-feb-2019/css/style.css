@@ -60,6 +60,12 @@ body{
 
 /* Header CSS */
 
+.clearFix {
+    clear: both;
+    content: "";
+    display: table;
+}
+
 .wrapper{
     width: 90%;
     margin: auto;
@@ -89,25 +95,25 @@ body{
     position: relative;
 }
 
-.navigation-menu .main-menu li{
+.main-menu-item{
     display: inline;
     padding: 15px;
 }
 
-.navigation-menu .main-menu li:last-child:hover{
+.main-menu-item:last-child:hover{
     border-bottom: none;
 }
 
-.navigation-menu .main-menu li:hover{
+.main-menu-item:hover{
     border-bottom: 2px solid #ffffff;
     transition: 0.2s;
 }
 
-.navigation-menu .main-menu li img{
+.main-menu-item img{
     vertical-align: middle;
 }
 
-.navigation-menu .main-menu li a{
+.main-menu-item a{
     text-decoration: none;
     color: #fff;
 }
@@ -130,11 +136,15 @@ body{
 .dropdown-content {
     display: none;
     background-image: url("../assets/header-bg.jpg");
-    max-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     margin-left: 200px;
-    z-index: 5;
+    overflow: auto;
+    z-index: 1;
+    position: absolute;
+    width: 200px;
+    text-align: center;
 }
+
 
 .dropdown-content a {
     color: #fff;
@@ -147,12 +157,33 @@ body{
     background-color: #dd6f06;
 }
 
+.dropdown-content-hover{
+    display: none;
+    background-color: #dd6f06;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-left: 20px;
+    position: absolute;
+    width: 150px;
+    text-align: center;
+    line-height: 20px;
+}
+
+.sub-menu-item{
+    padding: 10px 20px;
+}
+
+.sub-menu-item:hover{
+    font-weight: bold;
+}
+
 .show {
     display: block;
 }
 
-.dropdown-content-hover{
-    display: none;
+.dropdown-content-hover li a{
+    color: #fff;
+    display: block;
 }
 
 .li-dropdown{
@@ -310,6 +341,18 @@ body{
     opacity: 0.7;
 }
 
+.video-small-img{
+    float: left;
+    width: 120px;
+    height: 100%;
+    background: url("../assets/image-2.jpg") no-repeat;
+    opacity: 0.7;
+}
+
+.video-small .active-image{
+    opacity:1;
+}
+
 .video-small-content{
     float: right;
     width: 60%;
@@ -343,3 +386,5 @@ body{
     top: 35px;
     left: 70px;
 }
+
+/*nav ul li:hover ul { display: block; }*/

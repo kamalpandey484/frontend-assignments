@@ -8,6 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Quicksand:300" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
 <body>
     <header class="header">
@@ -15,38 +16,40 @@
             <img src="assets/logo.png" alt="TTN Logo">
             <span class="bonjour">Bonjour!</span>
         </div>
-        <nav class="main-nav">
-            <ul class="main-nav-ul">
-                <li><a class="active" href="#">TECHNOLOGY</a>
-                    <ul class="submenu">
-                        <li><a href="#">JavaScript</a>
-                            <ul class="submenu subsubmenu">
-                                <li><a href="#">React JS</a></li>
-                                <li><a href="#">Angular JS</a></li>
-                                <li><a href="#">Vue JS</a></li>
-                                <li><a href="#">Node JS</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Java</a></li>
-                        <li><a href="#">Python</a></li>
-                        <li><a href="#">Drupal</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">ANALYTICS</a></li>
-                <li><a href="#">DIGITAL MARKETING</a></li>
-                <li><a href="#">CONTACT</a></li>
-            </ul>
-        </nav>
-        <nav class="top-nav">
-            <ul class="top-nav-ul">
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">WORK</a></li>
-                <li><a href="#">KNOWLEDGE</a></li>
-                <li><a href="#">MEDIA</a></li>
-                <li><a href="#">BLOG</a></li>
-                <li><a href="#">CONTACT</a></li>
-            </ul>
-        </nav>
+        <div class="header-navbar">
+            <nav class="top-nav">
+                <ul class="top-nav-ul">
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">WORK</a></li>
+                    <li><a href="#">KNOWLEDGE</a></li>
+                    <li><a href="#">MEDIA</a></li>
+                    <li><a href="#">BLOG</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </nav>
+            <nav class="main-nav">
+                <ul class="main-nav-ul">
+                    <li><a href="#">TECHNOLOGY <i class="fa fa-angle-down"></i></a>
+                        <ul class="submenu">
+                            <li class="submenu-li"><a href="#">JavaScript <i class="fa fa-angle-right"></i></a>
+                                <ul class="submenu subsubmenu">
+                                    <li class="submenu-li"><a href="#">React JS</a></li>
+                                    <li class="submenu-li"><a href="#">Angular JS</a></li>
+                                    <li class="submenu-li"><a href="#">Vue JS</a></li>
+                                    <li class="submenu-li"><a href="#">Node JS</a></li>
+                                </ul>
+                            </li>
+                            <li class="submenu-li"><a href="#">Java <i class="fa fa-angle-right"></i></a></li>
+                            <li class="submenu-li"><a href="#">Python <i class="fa fa-angle-right"></i></a></li>
+                            <li class="submenu-li"><a href="#">Drupal <i class="fa fa-angle-right"></i></a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">ANALYTICS <i class="fa fa-angle-down"></i></a></li>
+                    <li><a href="#">DIGITAL MARKETING <i class="fa fa-angle-down"></i></a></li>
+                    <li><a href="#">CONTACT <i class="fa fa-angle-down"></i></a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <section class="section">
         <p class="header-text">We conceive, create and manage <span>digital solutions and platforms</span> for businesses across the globe through our <span>4 Services</span></p>
@@ -55,19 +58,19 @@
             <ul>
                 <li class="banner-menu-item">
                     <a href="#"><img src="assets/banner-menu-img-1.png" alt="banner menu image">
-                    <p>TECHNOLOGY</p></a>
+                    <span>TECHNOLOGY</span></a>
                 </li>
                 <li class="banner-menu-item">
                     <a href="#"><img src="assets/banner-menu-img-2.png" alt="banner menu image">
-                    <p>ANALYTICS</p></a>
+                    <span>ANALYTICS</span></a>
                 </li>
                 <li class="banner-menu-item">
                     <a href="#"><img src="assets/banner-menu-img-3.png" alt="banner menu image">
-                    <p>MARKETING</p></a>
+                    <span>MARKETING</p></a>
                 </li>
                 <li class="banner-menu-item">
                     <a href="#"><img src="assets/banner-menu-img-4.png" alt="banner menu image">
-                    <p>CONTENT</p></a>
+                    <span>CONTENT</span></a>
                 </li>
             </ul>
         </div>
@@ -75,35 +78,157 @@
     <div class="stats">
         <ul class="stats-ul">
             <li class="stats-item">
-                <h2 class="stats-count"> 150+ </h2>
+                <span class="stats-count"> 150+ </span>
                 <p class="stats-count-content"> Business critical web & mobile applications </p>
             </li>
             <li class="stats-item">
-                <h2 class="stats-count"> 100+ </h2>
-                <p class="stats-count-content"> Cloud </p>
-                <p class="stats-count-content"> implementations </p>
+                <span class="stats-count"> 100+ </span>
+                <span class="stats-count-content"> Cloud </span>
+                <span class="stats-count-content"> implementations </span>
             </li>
             <li class="stats-item">
-                <h2 class="stats-count"> 2 Billion+ </h2>
-                <p class="stats-count-content"> Impression</p>
-                <p class="stats-count-content"> delivered </p>
+                <span class="stats-count"> 2 Billion+ </span>
+                <span class="stats-count-content"> Impression</span>
+                <span class="stats-count-content"> delivered </span>
             </li>
             <li class="stats-item">
-                <h2 class="stats-count"> 100+ </h2>
+                <span class="stats-count"> 100+ </span>
                 <p class="stats-count-content"> Digital marketing campaigns </p>
             </li>
             <li class="stats-item">
-                <h2 class="stats-count"> 10+ </h2>
-                <p class="stats-count-content"> Years on </p>
-                <p class="stats-count-content"> analytics </p>
+                <span class="stats-count"> 10+ </span>
+                <span class="stats-count-content"> Years on </span>
+                <span class="stats-count-content"> analytics </span>
             </li>
         </ul>
     </div>
     <div class="powered-by">
-        <h2>Powered by</h2>
+        <h3>Powered by</h3>
         <img src="assets/orange-devider.svg" alt="divider">
-    </div>
+        <p class="powered-by-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum dolores dolorum, earum eius itaque maiores maxime molestiae nam nisi pariatur quia quod ullam vitae! Inventore laboriosam nemo provident sit voluptatibus.</p>
+        <div class="image-left-text-right">
+            <div class="image-left"><img src="assets/zoom/4.jpg" alt="Technology banner image" width="100%" height="200px" /></div>
+            <div class="text-right">
+                <h4 class="powered-by-text-h4">Technology</h4>
+                <p class="powered-by-text-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, amet aspernatur, debitis deserunt ea enim, eum exercitationem facere magni modi</p>
+                <button class="know-more-button">know more</button>
+            </div>
+        </div>
+        <div class="image-right-text-left">
+            <div class="text-left">
+                <h4 class="powered-by-text-h4">Technology</h4>
+                <p class="powered-by-text-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, amet aspernatur, debitis deserunt ea enim, eum exercitationem facere magni modi</p>
+                <button class="know-more-button">know more</button>
+            </div>
+            <div class="image-left"><img src="assets/zoom/3.jpg" alt="Technology banner image" width="100%" height="200px" /></div>
+        </div>
+        <div class="image-left-text-right">
+            <div class="image-left"><img src="assets/zoom/2.jpg" alt="Technology banner image" width="100%" height="200px" /></div>
+            <div class="text-right">
+                <h4 class="powered-by-text-h4">Technology</h4>
+                <p class="powered-by-text-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, amet aspernatur, debitis deserunt ea enim, eum exercitationem facere magni modi</p>
+                <button class="know-more-button">know more</button>
+            </div>
+        </div>
+        <div class="image-right-text-left">
+            <div class="text-left">
+                <h4 class="powered-by-text-h4">Technology</h4>
+                <p class="powered-by-text-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, amet aspernatur, debitis deserunt ea enim, eum exercitationem facere magni modi</p>
+                <button class="know-more-button">know more</button>
+            </div>
+            <div class="image-left"><img src="assets/zoom/1.jpg" alt="Technology banner image" width="100%" height="200px" /></div>
+        </div>
 
+    </div>
+    <div class="map-area">
+        <div class="map-left-right-area">
+            <ul class="ttn-info">
+                <li class="ttn-info-li">
+                    <span class="stats-count">600+</span>
+                    <span>PEOPLE</span>
+                </li>
+                <li class="ttn-info-li">
+                    <span class="stats-count">6</span>
+                    <span>OFFICES</span>
+                </li>
+                <li class="ttn-info-li">
+                    <span class="stats-count">12</span>
+                    <span>COUNTRIES</span>
+                </li>
+            </ul>
+        </div>
+        <div class="map-middle-area">
+            <p class="map-area-header-text">We've gone places!</p>
+            <img src="assets/orange-devider.svg" alt="Devider">
+            <img class="map-image" src="assets/map-image.png" alt="Map Picture">
+            <span class="orange-pointer orange-pointer-1"></span>
+            <span class="orange-pointer orange-pointer-2"></span>
+            <span class="orange-pointer orange-pointer-3"></span>
+            <span class="orange-pointer orange-pointer-4"></span>
+            <span class="orange-pointer orange-pointer-5"></span>
+            <span class="orange-pointer orange-pointer-6"></span>
+            <span class="orange-pointer orange-pointer-7"></span>
+
+            <span class="orange-pointer orange-pointer-8"></span>
+            <span class="orange-pointer orange-pointer-9"></span>
+            <span class="orange-pointer orange-pointer-10"></span>
+            <span class="orange-pointer orange-pointer-11"></span>
+            <span class="orange-pointer orange-pointer-12"></span>
+            <span class="orange-pointer orange-pointer-13"></span>
+
+            <span class="orange-pointer orange-pointer-14"></span>
+            <span class="orange-pointer orange-pointer-15"></span>
+            <span class="orange-pointer orange-pointer-16"></span>
+            <span class="orange-pointer orange-pointer-17"></span>
+            <span class="orange-pointer orange-pointer-18"></span>
+
+            <span class="purple-pointer purple-pointer-1"></span>
+            <span class="purple-pointer purple-pointer-2"></span>
+            <span class="purple-pointer purple-pointer-3"></span>
+            <span class="purple-pointer purple-pointer-4"></span>
+            <span class="purple-pointer purple-pointer-5"></span>
+            <span class="purple-pointer purple-pointer-6"></span>
+        </div>
+        <div class="map-left-right-area">
+            <ul class="ttn-info-right">
+                <div><span class="orange-pointer"></span>
+                    <span>Client Locations</span>
+                </div>
+                <div><span class="purple-pointer"></span>
+                    <span>Client Locations</span>
+                </div>
+            </ul>
+        </div>
+
+    </div>
+    <footer class="footer">
+        <div class="reach-us-section">
+            <div class="social-media-icons">
+                <span>REMAIN IN TOUCH</span>
+                <ul class="social-media-icons-ul">
+                    <li><img src="assets/linkedin_icon.png" alt="Linkedin icon"></li>
+                    <li><img src="assets/twitter-icon.png" alt="Twitter icon"></li>
+                    <li><img src="assets/facebook-icon.png" alt="Facebook icon"></li>
+                    <li><img src="assets/googleplus-icon.png" alt="Google plus icon"></li>
+                    <li><img src="assets/facebook-icon.png" alt="Youtube icon"></li>
+                    <li><img src="assets/slideshare-icon.png" alt="Slide share icon"></li>
+                </ul>
+            </div>
+            <div class="subscribe-section">
+                <form action="#">
+                    <span class="subscribe-span">SUBSCRIBE TO OUR <input type="checkbox"> NEWSLETTER <input type="checkbox"> BLOG</span>
+                    <input class="input-type-email" type="email"><button class="subscribe-submit-button" type="submit">Sign up</button>
+                </form>
+            </div>
+        </div>
+        <div class="copyright">
+            <img src="assets/footer-logo.png" alt="Black and white ttn logo">
+            <span>&copy; ToTheNew 2015</span>
+        </div>
+    </footer>
+    <div class="footer-show-more">
+        <span>Show More<i class="fa fa-angle-down"></i></span>
+    </div>
     <script src="js/jquery-3.3.1.min.js"></script>
     <script>
         $(document).ready(function(){

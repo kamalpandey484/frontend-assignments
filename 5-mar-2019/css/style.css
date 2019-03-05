@@ -1,0 +1,371 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.clearFix {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.wrapper{
+    width: 90%;
+    margin: auto;
+}
+
+header{
+    background-image: url("../assets/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    position: relative;
+    color: #fff;
+    text-align: center;
+    z-index: 1;
+}
+
+
+header:before {
+    content: '';
+    background: #52515a;
+    opacity: 0.8;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+}
+
+.navigation{
+    height: 100px;
+    line-height: 100px;
+    border-bottom: 1px solid #fff;
+}
+
+.navigation-menu ul li{
+    display: inline;
+    margin-right: 20px;
+}
+
+.navigation-menu ul li:last-child{
+    margin-right: 0;
+}
+
+.navigation-menu ul{
+    float: right;
+}
+
+.logo{
+    float: left;
+}
+
+.navigation-menu ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.hamburger-menu-icon{
+    float: right;
+    display: none;
+}
+
+.header-content{
+    padding:10% 10%;
+}
+
+.header-content-heading{
+    font-size: 40px;
+}
+
+.header-content-demo {
+    padding-top: 5%;
+}
+
+.fas{
+    font-size: 40px;
+    color: #67a483;
+}
+
+.header-content-demo-repeat-heading{
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 50px;
+}
+
+.header-content-demo-repeat-content{
+    font-weight: bold;
+    color: #868686;
+}
+
+.header-content-demo-repeat{
+    display: inline-block;
+    width: calc(100%/3 - 6px);
+    border-right: 2px solid #626262;
+}
+
+.header-content-demo-repeat:last-child{
+    border-right: none;
+}
+
+.get-started{
+    margin-top: 30px;
+    background-color: transparent;
+    color: #67a483;
+    font-size: 15px;
+    padding: 10px 40px;
+    border: 2px solid #67a483;
+    border-radius: 30px;
+    text-transform: uppercase;
+}
+
+.section{
+    width: 100%;
+    text-align: center;
+    background-color: #fff;
+    height: 500px;
+    padding-top: 3%;
+}
+
+.section-content{
+    width: 100%;
+}
+
+.section-content-both{
+    display: inline;
+    width: 50%;
+    padding: 0% 8%;
+}
+
+.section-content-both img{
+    border-radius: 50%;
+}
+
+.section-content-both-heading{
+    font-size: 30px;
+    padding: 5% 20%;
+    color: #626262;
+}
+
+.section-content-both-content{
+    line-height: 25px;
+}
+
+.section-content-both:last-child{
+    float: right;
+}
+
+.section-content-both:first-child{
+    float: left;
+}
+
+.footer{
+    background-color: #67a483;
+    height: 600px;
+    color: #fff;
+    text-align: center;
+    padding: 5% 0;
+}
+
+.get-in-touch{
+    font-size: 30px;
+    text-align: center;
+
+}
+
+.form-input-half-left{
+    width: calc(100%/2 - 2px);
+    display: inline-block;
+    padding-right: 10px;
+}
+
+.form-input-half-left>input{
+    width: 100%;
+    background-color: transparent;
+    padding: 2%;
+    color: #b4b4b4;
+    border: 1px solid #b4b4b4;
+    border-radius: 5px;
+}
+
+label{
+    display: block;
+    text-align: left;
+    line-height: 50px;
+    font-weight: bold;
+}
+
+.form-input-half-right{
+    width: calc(100%/2 - 3px);
+    display: inline-block;
+    padding-left: 10px;
+}
+
+.form-input-half-right>input{
+    width: 100%;
+    background-color: transparent;
+    padding: 2%;
+    color: #b4b4b4;
+    border: 1px solid #b4b4b4;
+    border-radius: 5px;
+}
+
+.form-input-full{
+    width: 100%;
+}
+
+textarea{
+    width: 100%;
+    background-color: transparent;
+    padding: 2%;
+    color: #b4b4b4;
+    border: 1px solid #b4b4b4;
+    border-radius: 5px;
+    resize: none;
+}
+
+::placeholder{
+    color: #b4b4b4;
+}
+
+.send-message-button{
+    border: 2px solid #fff;
+    color: #fff;
+    margin-top: 30px;
+    background-color: transparent;
+    font-size: 15px;
+    padding: 10px 40px;
+    border-radius: 30px;
+}
+
+.copyright-footer{
+    margin-top: 2%;
+    font-size: 12px;
+    color: #e4e4e4;
+    font-weight: bold;
+}
+
+/*........................For Tablet Device.....................*/
+
+@media (max-width: 1120px){
+    .section-content-both{
+        width: 100%;
+    }
+    .section{
+      height: 920px;
+    }
+    .section-content-both:last-child{
+        padding-top: 50px;
+    }
+    .form-input-half-left{
+        width: 100%;
+        padding: 0;
+    }
+    .form-input-half-right{
+        width: 100%;
+        padding: 0;
+    }
+    header{
+        height: 550px;
+        position: relative;
+    }
+
+    .navigation-menu{
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: none;
+    }
+
+    .hamburger-menu-icon-show{
+        display: block;
+    }
+
+    .hamburger-menu-icon{
+        display: block;
+        cursor: pointer;
+    }
+
+    .navigation nav ul{
+        margin-top: 60px;
+    }
+
+    .navigation nav ul li{
+        display: block;
+        width: 200px;
+        line-height: 50px;
+        border-bottom: 1px solid #fff;
+        background-color: #67a483;
+        margin-right: 20px;
+    }
+}
+
+/*........................For Mobile Device.....................*/
+
+@media (max-width: 768px){
+    .header-content-demo-repeat{
+        width: 100%;
+        padding-top: 30px;
+    }
+    header{
+        height: 750px;
+    }
+}

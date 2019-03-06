@@ -59,7 +59,7 @@ body{
 }
 
 
-.clearFix {
+.clearfix {
     clear: both;
     content: "";
     display: table;
@@ -74,7 +74,6 @@ header{
     background-image: url("../assets/banner.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 600px;
     position: relative;
     color: #fff;
     text-align: center;
@@ -194,8 +193,7 @@ header:before {
     width: 100%;
     text-align: center;
     background-color: #fff;
-    height: 500px;
-    padding-top: 3%;
+    padding: 3% 0;
 }
 
 .section-content{
@@ -232,7 +230,6 @@ header:before {
 
 .footer{
     background-color: #67a483;
-    height: 600px;
     color: #fff;
     text-align: center;
     padding: 5% 0;
@@ -328,22 +325,22 @@ textarea{
     .section-content-both{
         width: 100%;
     }
-    .section{
-      height: 920px;
-    }
+
     .section-content-both:last-child{
         padding-top: 50px;
     }
+
     .form-input-half-left{
         width: 100%;
         padding: 0;
     }
+
     .form-input-half-right{
         width: 100%;
         padding: 0;
     }
+
     header{
-        height: 550px;
         position: relative;
     }
 
@@ -370,7 +367,6 @@ textarea{
         line-height: 50px;
         border-bottom: 1px solid #fff;
         background-color: #67a483;
-        margin-right: 45px;
     }
 
     .navigation nav ul li:last-child{
@@ -389,18 +385,13 @@ textarea{
         width: 100%;
         padding-top: 30px;
     }
+
     header{
         height: 750px;
     }
-    .section{
-        height: 960px;
-    }
-    .section-content-both{
-        padding-top: 20px;
-    }
 
-    .navigation nav ul li{
-        margin-right: 25px;
+    .section-content-both{
+        padding:0;
     }
 
     .header-content-demo-repeat{

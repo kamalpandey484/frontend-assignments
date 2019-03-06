@@ -124,7 +124,6 @@ header:before {
 
 .navigation-menu ul li a:hover{
     border-bottom: 2px solid #fff;
-    transition: ;
 }
 
 .hamburger-menu-icon{
@@ -358,7 +357,6 @@ textarea{
     .hamburger-menu-icon{
         display: block;
         cursor: pointer;
-        z-index: 9999;
     }
 
     .navigation nav ul li{
@@ -380,14 +378,10 @@ textarea{
 
 /*........................For Mobile Device.....................*/
 
-@media (max-width: 768px){
+@media (max-width: 767px){
     .header-content-demo-repeat{
         width: 100%;
         padding-top: 30px;
-    }
-
-    header{
-        height: 750px;
     }
 
     .section-content-both{
@@ -396,5 +390,14 @@ textarea{
 
     .header-content-demo-repeat{
         border-right: none;
+    }
+    .fa-bars{
+        color: #fff;
+        font-size: 20px;
+    }
+
+    .navigation {
+        height: 75px;
+        line-height: 75px;
     }
 }

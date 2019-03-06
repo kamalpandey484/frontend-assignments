@@ -123,6 +123,11 @@ header:before {
     color: #fff;
 }
 
+.navigation-menu ul li a:hover{
+    border-bottom: 2px solid #fff;
+    transition: ;
+}
+
 .hamburger-menu-icon{
     float: right;
     display: none;
@@ -175,6 +180,14 @@ header:before {
     border: 2px solid #67a483;
     border-radius: 30px;
     text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.get-started:hover{
+    background-color: #67a483;
+    color: #fff;
+    border: 2px solid #fff;
 }
 
 .section{
@@ -228,7 +241,6 @@ header:before {
 .get-in-touch{
     font-size: 30px;
     text-align: center;
-
 }
 
 .form-input-half-left{
@@ -294,6 +306,13 @@ textarea{
     font-size: 15px;
     padding: 10px 40px;
     border-radius: 30px;
+    cursor: pointer;
+}
+
+.send-message-button:hover{
+    border: 2px solid #67a483;
+    color: #67a483;
+    background-color: #fff;
 }
 
 .copyright-footer{
@@ -330,7 +349,7 @@ textarea{
 
     .navigation-menu{
         position: absolute;
-        top: 0;
+        top: 60px;
         right: 0;
         display: none;
     }
@@ -342,10 +361,7 @@ textarea{
     .hamburger-menu-icon{
         display: block;
         cursor: pointer;
-    }
-
-    .navigation nav ul{
-        margin-top: 60px;
+        z-index: 9999;
     }
 
     .navigation nav ul li{
@@ -354,7 +370,15 @@ textarea{
         line-height: 50px;
         border-bottom: 1px solid #fff;
         background-color: #67a483;
-        margin-right: 20px;
+        margin-right: 45px;
+    }
+
+    .navigation nav ul li:last-child{
+        border-bottom: none ;
+    }
+
+    .fa-bars{
+        color: #fff;
     }
 }
 
@@ -367,5 +391,19 @@ textarea{
     }
     header{
         height: 750px;
+    }
+    .section{
+        height: 960px;
+    }
+    .section-content-both{
+        padding-top: 20px;
+    }
+
+    .navigation nav ul li{
+        margin-right: 25px;
+    }
+
+    .header-content-demo-repeat{
+        border-right: none;
     }
 }

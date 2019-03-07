@@ -697,17 +697,37 @@ body{
 }
 
 .uniqueness-delivered-left{
-    background:url("../assets/banner-cover.jpg");
-    width: 100%;
+    background:url("../assets/banner-cover.jpg") no-repeat;
+    width: 50%;
+    background-size: cover;
+    float: left;
 }
 
 
 
 .section-overlay {
-    width: 100%;
+    display: none;
     height: 100%;
     background-color: #000;
     opacity: 0.8;
+}
+
+.uniqueness-delivered-left:hover .section-overlay {
+    display: block;
+}
+
+.uniqueness-delivered-right-top:hover .section-overlay {
+    display: block;
+}
+
+
+.uniqueness-delivered-right-bottom:hover .section-overlay {
+    display: block;
+}
+
+.uniqueness-delivered-right {
+    float: left;
+    width: 50%;
 }
 
 .uniqueness-delivered-right-top{

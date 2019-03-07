@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="45a7354e-2f8a-449a-b893-e07dacc7953c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/kitchen_adventurer_caramel.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/kitchen_adventurer_cheesecake_brownie.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/kitchen_adventurer_donut.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/kitchen_adventurer_lemon.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../26-feb-2019/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../26-feb-2019/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../27-feb-2019/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../27-feb-2019/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../27-feb-2019/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../27-feb-2019/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -26,8 +20,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="13" selection-start-line="11" selection-end-line="14" />
+            <state relative-caret-position="345">
+              <caret line="72" column="21" lean-forward="true" selection-start-line="57" selection-start-column="12" selection-end-line="72" selection-end-column="21" />
               <folding>
                 <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" />
@@ -123,7 +117,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../27-feb-2019" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -169,14 +163,16 @@
       <workItem from="1551239627135" duration="10574000" />
       <workItem from="1551257727693" duration="6749000" />
       <workItem from="1551278675286" duration="326000" />
+      <workItem from="1551323650867" duration="361000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48514000" />
+    <option name="totallyTimeSpent" value="48875000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1299" height="743" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2460815" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -218,8 +214,8 @@
     <entry file="file://$PROJECT_DIR$/home.html" />
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="13" selection-start-line="11" selection-end-line="14" />
+        <state relative-caret-position="345">
+          <caret line="72" column="21" lean-forward="true" selection-start-line="57" selection-start-column="12" selection-end-line="72" selection-end-column="21" />
           <folding>
             <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" />

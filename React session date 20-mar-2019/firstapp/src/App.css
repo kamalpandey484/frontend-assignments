@@ -1,0 +1,67 @@
+.app {
+  width: 100%;
+  font-size: 40px;
+  color: #fff;
+}
+
+header  {
+  background-color: #003;
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section {
+  background-color: goldenrod;
+  height: 400px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer{
+  background-color: aquamarine;
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  background-color: blueviolet;
+  color: #fff;
+  padding: 20px 20px;
+  border: 0;
+  border-radius: 10px;
+  font-size: 20px;
+  outline: none;
+  cursor: pointer;
+}
+
+button:hover{
+  background-color: #4f1c8a;
+}
+
+.main{
+  display: flex;
+}
+
+aside{
+  background-color: coral;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.counter-area {
+  background-color: #fff;
+  color: #003;
+  margin-left: 50px;
+  padding: 10px 50px;
+  border-radius: 10px;
+}

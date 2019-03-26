@@ -1,0 +1,46 @@
+
+.app {
+  width: 100%;
+  font-size: 40px;
+  color: #fff;
+}
+
+section {
+  background-color: goldenrod;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+button {
+  color: #fff;
+  padding: 20px 20px;
+  border: 0;
+  font-size: 20px;
+  outline: none;
+  cursor: pointer;
+}
+
+.inc-btn{
+  background-color: #006400;
+}
+
+.dec-btn{
+  background-color: dodgerblue;
+}
+
+
+.counter-area {
+  background-color: #fff;
+  color: #003;
+  padding: 22px 50px;
+}
+
+.inc-all-btn{
+  background-color: brown;
+}
+
+.dec-all-btn{
+  background-color: brown;
+  border-right: 2px solid white;
+}

@@ -9,19 +9,22 @@ class App extends Component {
     counter : 0
   }
 
-  counterVal = () =>{
-      this.state.counter++;
-      this.setState({
-        counter : this.state.counter
-      })
-  }
+  // counterVal = () =>{
+  //     this.state.counter++;
+  //     this.setState({
+  //       counter : this.state.counter
+  //     })
+  // }
 
+  setName=(name)=>{
+      console.log(name);
+  }
 
   render() {
     return (
       <div className='app'>
           <Header num={this.state.counter}/>
-          <Main fun={this.counterVal}/>
+          <Main fun={this.counterVal} myName={this.setName}/>
           <Footer/>
       </div>
     );

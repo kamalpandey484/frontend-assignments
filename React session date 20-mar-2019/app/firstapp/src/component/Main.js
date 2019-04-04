@@ -8,7 +8,10 @@ class Main extends Component{
         return(
             <div className='main'>
                 <aside>Aside</aside>
-                <section><button onClick={this.props.fun}>Counter</button></section>
+                <section><button onClick={this.props.inc} className='inc-btn'>Increment</button>
+                    <button onClick={this.props.dec} className='dec-btn'>Decrement</button>
+                    <button onClick={this.props.reset} className='reset-btn'>Reset</button>
+                </section>
             </div>
         )
     }

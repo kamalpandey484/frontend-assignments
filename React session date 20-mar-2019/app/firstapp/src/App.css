@@ -32,7 +32,6 @@ footer{
 }
 
 button {
-  background-color: blueviolet;
   color: #fff;
   padding: 20px 20px;
   border: 0;
@@ -40,10 +39,19 @@ button {
   font-size: 20px;
   outline: none;
   cursor: pointer;
+  margin-left: 20px;
 }
 
-button:hover{
-  background-color: #4f1c8a;
+.inc-btn{
+  background-color: #006400;
+}
+
+.dec-btn{
+  background-color: dodgerblue;
+}
+
+.reset-btn{
+  background-color: red;
 }
 
 .main{

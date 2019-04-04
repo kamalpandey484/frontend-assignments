@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 import Main from "./Main";
-import 'whatwg-fetch';
+import Axios from 'axios';
+// import 'whatwg-fetch'
 import SeriesList from './SeriesList'
 
 class App extends Component {
@@ -9,11 +10,17 @@ class App extends Component {
     series : []
   }
 
+    // onSeriesChange = (e) =>{
+    //     fetch(`http://api.tvmaze.com/search/shows?q=${e.target.value}`)
+    //         .then(response => response.json())
+    //         .then(json => this.setState({series: json}))
+    //     console.log(e.target.value)
+    // }
+
 
   onSeriesChange = (e) =>{
-    fetch(`http://api.tvmaze.com/search/shows?q=${e.target.value}`)
-        .then(response => response.json())
-        .then(json => this.setState({series: json}))
+      Axios.get(`http://api.tvmaze.com/search/shows?q=${e.target.value}`)
+        .then(json => this.setState({series: json.data}))
     console.log(e.target.value)
   }
 
@@ -21,7 +28,7 @@ class App extends Component {
     return (
      <div>
         <Main seriesLength = {this.state.series.length}/>
-        <SeriesList list = {this.state.series} change = {this.onSeriesChange}/>
+        <SeriesList list = {this.state.series || []} change = {this.onSeriesChange}/>
      </div>
     );
   }

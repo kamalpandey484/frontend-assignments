@@ -9,19 +9,32 @@ class App extends Component {
     counter : 0
   }
 
-  counterVal = () =>{
+  incVal = () =>{
       this.state.counter++;
       this.setState({
         counter : this.state.counter
       })
   }
 
+    decVal = () =>{
+        this.state.counter--;
+        this.setState({
+            counter : this.state.counter
+        })
+    }
+
+    resetVal = () =>{
+        this.state.counter = 0;
+        this.setState({
+            counter : this.state.counter
+        })
+    }
 
   render() {
     return (
       <div className='app'>
           <Header num={this.state.counter}/>
-          <Main fun={this.counterVal}/>
+          <Main inc={this.incVal} dec={this.decVal} reset={this.resetVal}/>
           <Footer/>
       </div>
     );
